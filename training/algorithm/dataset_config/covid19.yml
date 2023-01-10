@@ -1,0 +1,16 @@
+# Copyright 2021 Lucas Fidon
+# Config file with the hyperparameters and paths for COVID-19 lesion segmentation in CT
+
+name: 'COVID19'
+
+info:
+  labels: {
+    'lesion': 1,
+    'lung': 2,
+    'background': 0,
+  }
+  image_keys: ["ct"]
+  all_keys: ["ct", "label"]
+
+log:
+  message: "COVID-19 dataset"

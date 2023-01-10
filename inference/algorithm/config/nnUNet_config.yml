@@ -1,0 +1,15 @@
+# Copyright 2021 Lucas Fidon
+
+data:
+  split: 0.9                          # ratio of data used for training vs validation
+  data_split_seed: 112                # set manual seed for the split of the training data into training/validation
+  spacing: [1.0, 1.0, 1.0]
+  patch_size: [128, 192, 128]
+  data_augmentation: "nnUNet"
+
+network:
+  model_name: "DynUNet"
+
+log:
+  exp_name: "nnUNet"                 # default name for the experiments using this config file
+  message: "nnU-Net in MONAI"
